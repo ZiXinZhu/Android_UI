@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assistent</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_index">Index</string>
+    <string name="tab_text_1">聊天</string>
+    <string name="tab_text_2">用户</string>
+    <string name="title_activity_list_active">ListActive</string>
+</resources>
