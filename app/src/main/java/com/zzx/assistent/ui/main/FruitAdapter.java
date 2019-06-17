@@ -24,11 +24,18 @@ public class FruitAdapter extends ArrayAdapter<FruitDO> {
     public View getView(int position,  View convertView, ViewGroup parent) {
 
         FruitDO fruitDO=getItem(position);
-        View view= LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
+        View view;
+        if(convertView==null){
+           view= LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
+        }else {
+            view=convertView;
+        }
+
         ImageView fruitimages=view.findViewById(R.id.fruit_image);
         TextView fruitname=view.findViewById(R.id.fruit_name);
         fruitimages.setImageResource(fruitDO.getImageId());
         fruitname.setText(fruitDO.getName());
         return view;
     }
+
 }
