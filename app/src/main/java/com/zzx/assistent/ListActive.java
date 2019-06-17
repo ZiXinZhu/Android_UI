@@ -27,7 +27,7 @@ public class ListActive extends AppCompatActivity {
                     startActivity(intent_index);
                     return true;
                 case R.id.navigation_notifications:
-                    Intent intent_register=new Intent(ListActive.this,RegisterActive.class);
+                    Intent intent_register=new Intent(ListActive.this,ListViewClick.class);
                     startActivity(intent_register);
                     return true;
             }

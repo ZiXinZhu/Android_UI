@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_register) {
-            Intent intent_register = new Intent(LoginActivity.this, ListViewClick.class);
+            Intent intent_register = new Intent(LoginActivity.this, RegisterActive.class);
             startActivity(intent_register);
             return true;
         }

@@ -7,16 +7,18 @@ import android.widget.ListView;
 import com.zzx.assistent.ui.main.FruitAdapter;
 import com.zzx.assistent.ui.main.FruitDO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListViewClick extends AppCompatActivity {
 
-    List<FruitDO> list;
+    List<FruitDO> list=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_click);
         initFruits();
+
         FruitAdapter adapter=new FruitAdapter(ListViewClick.this,R.layout.activity_list_view_click,list);
         ListView listView=findViewById(R.id.list_view);
         listView.setAdapter(adapter);
